@@ -194,8 +194,8 @@ For a more rigorous version of this loop — with parallel baseline runs, progra
 
 ---
 
-<div align="center">
+<!-- <div align="center">
 
 *This guide documents a full research-to-build process — problem, mechanism, worked example, and an honest evaluation of the result.*
 
-</div>
+</div> -->
