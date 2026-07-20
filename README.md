@@ -1,5 +1,7 @@
 <div align="center">
 
+<img src="assets/banner.svg" alt="Persona vs. Procedure" width="100%"/>
+
 # Why Your Prompt's Persona Doesn't Work
 ### (And What To Do Instead)
 
@@ -76,15 +78,7 @@ Anthropic released the Agent Skills format publicly via [`github.com/anthropics/
 
 A Skill is a folder containing a `SKILL.md` file — YAML frontmatter plus markdown instructions — and, optionally, bundled scripts, reference docs, and template assets. What makes the format matter for the problem in Section 2 is *how* it loads content into the model's context, in three stages:
 
-```
-┌─────────────────┐      ┌─────────────────┐      ┌─────────────────┐
-│   1. DISCOVERY   │      │   2. ACTIVATION   │      │   3. EXECUTION   │
-│                  │  →   │                  │  →   │                  │
-│  name + description│    │  full SKILL.md   │      │  scripts /        │
-│  (~dozen tokens)  │      │  body loads      │      │  references load  │
-│  always loaded    │      │  when triggered  │      │  only if needed   │
-└─────────────────┘      └─────────────────┘      └─────────────────┘
-```
+<img src="assets/progressive-disclosure.svg" alt="Three-stage progressive disclosure: Discovery, Activation, Execution" width="100%"/>
 
 The agent only ever loads what a task actually calls for. At startup, it sees just a skill's name and description — a few dozen tokens. Only when a task matches does the full body load. Reference files and scripts, if the skill has any, load only during execution, only if needed.
 

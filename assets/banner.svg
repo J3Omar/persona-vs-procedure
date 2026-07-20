@@ -1,0 +1,58 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#12141A"/>
+      <stop offset="100%" stop-color="#1B1E27"/>
+    </linearGradient>
+    <linearGradient id="leftGlow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C86B4A" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#C86B4A" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="rightGlow" x1="1" y1="0" x2="0" y2="0">
+      <stop offset="0%" stop-color="#4A9C8E" stop-opacity="0.20"/>
+      <stop offset="100%" stop-color="#4A9C8E" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="600" height="300" fill="url(#leftGlow)"/>
+  <rect x="600" width="600" height="300" fill="url(#rightGlow)"/>
+
+  <!-- center divider -->
+  <line x1="600" y1="40" x2="600" y2="260" stroke="#3A3D47" stroke-width="1"/>
+
+  <!-- LEFT: persona / mask motif -->
+  <g transform="translate(180,150)">
+    <circle cx="0" cy="-8" r="46" fill="none" stroke="#C86B4A" stroke-width="2.5" opacity="0.85"/>
+    <path d="M -46 -8 Q 0 40 46 -8" fill="none" stroke="#C86B4A" stroke-width="2.5" opacity="0.85" stroke-dasharray="4 5"/>
+    <circle cx="-16" cy="-14" r="4" fill="#C86B4A"/>
+    <circle cx="16" cy="-14" r="4" fill="#C86B4A"/>
+    <path d="M -14 12 Q 0 4 14 12" fill="none" stroke="#C86B4A" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="0" y="92" text-anchor="middle" fill="#E8A47E" font-family="ui-monospace, Menlo, monospace" font-size="15" letter-spacing="2">PERSONA</text>
+    <text x="0" y="114" text-anchor="middle" fill="#8A8D97" font-family="ui-monospace, Menlo, monospace" font-size="12">"you are an expert"</text>
+  </g>
+
+  <!-- RIGHT: procedure / checklist motif -->
+  <g transform="translate(940,90)">
+    <rect x="-70" y="-4" width="140" height="140" rx="10" fill="none" stroke="#4A9C8E" stroke-width="2" opacity="0.85"/>
+    <g stroke="#4A9C8E" stroke-width="2" stroke-linecap="round">
+      <path d="M -50 20 L -42 28 L -26 10"/>
+      <line x1="-10" y1="18" x2="50" y2="18" opacity="0.6"/>
+      <path d="M -50 52 L -42 60 L -26 42"/>
+      <line x1="-10" y1="50" x2="50" y2="50" opacity="0.6"/>
+      <path d="M -50 84 L -42 92 L -26 74"/>
+      <line x1="-10" y1="82" x2="50" y2="82" opacity="0.6"/>
+    </g>
+    <text x="0" y="176" text-anchor="middle" fill="#7FC4B6" font-family="ui-monospace, Menlo, monospace" font-size="15" letter-spacing="2">PROCEDURE</text>
+    <text x="0" y="198" text-anchor="middle" fill="#8A8D97" font-family="ui-monospace, Menlo, monospace" font-size="12">"check X before stating Y"</text>
+  </g>
+
+  <!-- center arrow -->
+  <g transform="translate(600,150)">
+    <path d="M -30 0 L 30 0" stroke="#5A5D67" stroke-width="1.5"/>
+    <path d="M 22 -7 L 30 0 L 22 7" fill="none" stroke="#5A5D67" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- title -->
+  <text x="600" y="270" text-anchor="middle" fill="#EDEEF0" font-family="Georgia, 'Times New Roman', serif" font-size="26" font-style="italic">persona vs. procedure</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg viewBox="0 0 900 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .stage-box { fill: #1B1E27; stroke: #3A3D47; stroke-width: 1.5; rx: 12; }
+      .stage-num { font-family: ui-monospace, Menlo, monospace; font-size: 13px; fill: #4A9C8E; letter-spacing: 1px; }
+      .stage-title { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 16px; font-weight: 600; fill: #EDEEF0; }
+      .stage-body { font-family: -apple-system, Helvetica, Arial, sans-serif; font-size: 12.5px; fill: #9A9DA7; }
+      .stage-tag { font-family: ui-monospace, Menlo, monospace; font-size: 11px; fill: #6B6E78; }
+      .arrow { stroke: #5A5D67; stroke-width: 1.5; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="900" height="260" fill="#12141A"/>
+
+  <!-- Stage 1 -->
+  <g transform="translate(20,40)">
+    <rect class="stage-box" width="250" height="180" fill="#1B1E27" stroke="#3A3D47" stroke-width="1.5" rx="12"/>
+    <text x="24" y="34" class="stage-num">01 · DISCOVERY</text>
+    <text x="24" y="62" class="stage-title">Name + description</text>
+    <text x="24" y="90" class="stage-body">A few dozen tokens.</text>
+    <text x="24" y="108" class="stage-body">Always loaded, for every</text>
+    <text x="24" y="126" class="stage-body">skill, at startup.</text>
+    <circle cx="225" cy="150" r="14" fill="none" stroke="#4A9C8E" stroke-width="2"/>
+    <text x="225" y="155" text-anchor="middle" class="stage-tag" fill="#4A9C8E">~</text>
+  </g>
+
+  <!-- Arrow 1 -->
+  <path class="arrow" d="M 275 130 L 320 130"/>
+  <path class="arrow" d="M 312 123 L 320 130 L 312 137"/>
+
+  <!-- Stage 2 -->
+  <g transform="translate(325,40)">
+    <rect class="stage-box" width="250" height="180" fill="#1B1E27" stroke="#3A3D47" stroke-width="1.5" rx="12"/>
+    <text x="24" y="34" class="stage-num">02 · ACTIVATION</text>
+    <text x="24" y="62" class="stage-title">Full SKILL.md body</text>
+    <text x="24" y="90" class="stage-body">Loads only when a task</text>
+    <text x="24" y="108" class="stage-body">actually matches the</text>
+    <text x="24" y="126" class="stage-body">description's trigger.</text>
+    <rect x="205" y="138" width="24" height="24" rx="4" fill="none" stroke="#4A9C8E" stroke-width="2"/>
+    <path d="M 210 150 L 216 156 L 224 144" fill="none" stroke="#4A9C8E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path class="arrow" d="M 580 130 L 625 130"/>
+  <path class="arrow" d="M 617 123 L 625 130 L 617 137"/>
+
+  <!-- Stage 3 -->
+  <g transform="translate(630,40)">
+    <rect class="stage-box" width="250" height="180" fill="#1B1E27" stroke="#3A3D47" stroke-width="1.5" rx="12"/>
+    <text x="24" y="34" class="stage-num">03 · EXECUTION</text>
+    <text x="24" y="62" class="stage-title">Scripts / references</text>
+    <text x="24" y="90" class="stage-body">Bundled files load only</text>
+    <text x="24" y="108" class="stage-body">during execution, only</text>
+    <text x="24" y="126" class="stage-body">if the task needs them.</text>
+    <g transform="translate(205,138)" stroke="#4A9C8E" stroke-width="2" fill="none">
+      <rect x="0" y="0" width="20" height="24" rx="2"/>
+      <line x1="4" y1="7" x2="16" y2="7"/>
+      <line x1="4" y1="13" x2="16" y2="13"/>
+      <line x1="4" y1="19" x2="12" y2="19"/>
+    </g>
+  </g>
+</svg>
